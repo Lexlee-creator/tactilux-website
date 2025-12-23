@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -7,8 +8,12 @@ body {
     background-color: #fff;
 }
 
-a { text-decoration: none; color: inherit; }
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -18,12 +23,24 @@ header {
     color: #fff;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
-header .logo { font-size: 1.8rem; font-weight: bold; }
-header nav a { margin-left: 20px; transition: color 0.3s; }
-header nav a:hover { color: gold; }
+header .logo { 
+    font-size: 1.8rem; 
+    font-weight: bold; 
+}
 
+header nav a { 
+    margin-left: 20px; 
+    transition: color 0.3s; 
+}
+
+header nav a:hover { 
+    color: gold; 
+}
+
+/* Hero Section */
 .hero {
     height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -36,8 +53,15 @@ header nav a:hover { color: gold; }
     text-align: center;
 }
 
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
-.hero p { font-size: 1.2rem; margin-bottom: 30px; }
+.hero h1 { 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+}
+
+.hero p { 
+    font-size: 1.2rem; 
+    margin-bottom: 30px; 
+}
 
 .btn {
     background-color: gold;
@@ -47,10 +71,18 @@ header nav a:hover { color: gold; }
     border-radius: 25px;
     transition: transform 0.3s;
 }
-.btn:hover { transform: scale(1.1); }
 
-section { padding: 60px 50px; text-align: center; }
+.btn:hover { 
+    transform: scale(1.1); 
+}
 
+/* Sections */
+section { 
+    padding: 60px 50px; 
+    text-align: center; 
+}
+
+/* Services */
 #services .service-cards {
     display: flex;
     flex-wrap: wrap;
@@ -66,15 +98,26 @@ section { padding: 60px 50px; text-align: center; }
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.card img { width: 100%; border-radius: 15px; margin-bottom: 15px; }
-.card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
 
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
 form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     margin: auto;
 }
+
 form input, form textarea {
     padding: 10px;
     margin-bottom: 15px;
@@ -82,6 +125,7 @@ form input, form textarea {
     border: 1px solid #ccc;
     resize: none;
 }
+
 form button {
     padding: 10px;
     background-color: gold;
@@ -90,8 +134,12 @@ form button {
     border-radius: 25px;
     cursor: pointer;
 }
-form button:hover { transform: scale(1.05); }
 
+form button:hover { 
+    transform: scale(1.05); 
+}
+
+/* Footer */
 footer {
     background-color: #000;
     color: #fff;
@@ -99,7 +147,13 @@ footer {
     padding: 20px;
 }
 
+/* Responsive */
 @media(max-width: 768px) {
-    header { flex-direction: column; }
-    #services .service-cards { flex-direction: column; align-items: center; }
+    header { 
+        flex-direction: column; 
+    }
+    #services .service-cards { 
+        flex-direction: column; 
+        align-items: center; 
+    }
 }
